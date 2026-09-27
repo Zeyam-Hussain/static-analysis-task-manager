@@ -1,3 +1,5 @@
+"""SQLAlchemy mappings for users and their tasks."""
+
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 
@@ -5,6 +7,8 @@ from app.db.database import Base
 
 
 class User(Base):
+    """A registered account that owns task records."""
+
     __tablename__ = "user"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -15,6 +19,8 @@ class User(Base):
 
 
 class Task(Base):
+    """A task record associated with its creating user."""
+
     __tablename__ = "task"
 
     id = Column(Integer, primary_key=True, index=True)

@@ -1,3 +1,5 @@
+"""Request logging middleware and application logger."""
+
 import logging
 from fastapi import Request
 
@@ -12,7 +14,8 @@ logger.addHandler(handler)
 
 
 async def logging_middleware(request: Request, call_next):
-    logger.info(f"Incoming request: {request.method} {request.url.path}")
+    """Log request and response metadata around the downstream handler."""
+    logger.info("Incoming request: %s %s", request.method, request.url.path)
     response = await call_next(request)
-    logger.info(f"Outgoing response code: {response.status_code}")
+    logger.info("Outgoing response code: %s", response.status_code)
     return response

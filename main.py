@@ -1,15 +1,14 @@
-from fastapi import FastAPI, Depends, Request
+from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
 from app.api.endpoints import tasks, users
 from app.api.middleware.middleware import logging_middleware, logger
-from app.core.security import get_user_by_token
 from app.db.database import Base, engine
 
 app = FastAPI()
 
 
-app.include_router(tasks.router, prefix="/api/v1", tags=["Tasks"], dependencies=[Depends(get_user_by_token)])
+app.include_router(tasks.router, prefix="/api/v1", tags=["Tasks"])
 app.include_router(users.router, prefix="/api/v1", tags=["Users"])
 app.middleware("http")(logging_middleware)
 
