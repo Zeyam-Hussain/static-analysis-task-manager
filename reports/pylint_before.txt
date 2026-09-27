@@ -1,0 +1,56 @@
+﻿************* Module app.api.endpoints.tasks
+app\api\endpoints\tasks.py:30:0: C0301: Line too long (109/100) (line-too-long)
+app\api\endpoints\tasks.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\api\endpoints\tasks.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\tasks.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\tasks.py:42:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\tasks.py:48:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\tasks.py:56:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\tasks.py:70:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module app.api.endpoints.users
+app\api\endpoints\users.py:8:0: C0301: Line too long (103/100) (line-too-long)
+app\api\endpoints\users.py:17:0: C0301: Line too long (110/100) (line-too-long)
+app\api\endpoints\users.py:25:0: C0301: Line too long (101/100) (line-too-long)
+app\api\endpoints\users.py:28:0: C0301: Line too long (114/100) (line-too-long)
+app\api\endpoints\users.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\api\endpoints\users.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\users.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\endpoints\users.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module app.api.middleware.middleware
+app\api\middleware\middleware.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\api\middleware\middleware.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\api\middleware\middleware.py:15:4: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+app\api\middleware\middleware.py:17:4: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+************* Module app.api.models.task
+app\api\models\task.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\api\models\task.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+app\api\models\task.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+app\api\models\task.py:15:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module app.api.models.user
+app\api\models\user.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\api\models\user.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+app\api\models\user.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module app.core.config
+app\core\config.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\core\config.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+app\core\config.py:11:4: C0115: Missing class docstring (missing-class-docstring)
+************* Module app.core.security
+app\core\security.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\core\security.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\core\security.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\core\security.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\core\security.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+app\core\security.py:37:8: W0707: Consider explicitly re-raising using 'except JWTError as exc' and 'raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Could not validate token', headers={'WWW-Authenticate': 'Bearer'}) from exc' (raise-missing-from)
+app\core\security.py:44:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module app.db.database
+app\db\database.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\db\database.py:12:0: C0103: Constant name "SessionLocal" doesn't conform to UPPER_CASE naming style (invalid-name)
+app\db\database.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module app.db.db_structure
+app\db\db_structure.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+app\db\db_structure.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+app\db\db_structure.py:17:0: C0115: Missing class docstring (missing-class-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 7.69/10 (previous run: 7.69/10, +0.00)
+
