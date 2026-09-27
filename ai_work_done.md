@@ -103,6 +103,7 @@ The assignment was recorded in separate commits, not one final assignment dump:
 - `e8d5e11` Enforce task ownership and fix socket delivery
 - `da4ccc8` Isolate tests and cover task authorization
 - `5ea8cad` Complete quality report and verification evidence
+- `5defc56` Document workflow and estimated rubric marks
 
 The bundle preserves these refs and earlier repository history.
 
